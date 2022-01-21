@@ -59,6 +59,17 @@ public class Player_controller : MonoBehaviour
 
 
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetBool("has_gun", true);
+        }
+        if (!Input.GetKey(KeyCode.F))
+        {
+            animator.SetBool("has_gun", false);
+        }
+
+
+
 
 
 
